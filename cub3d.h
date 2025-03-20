@@ -12,8 +12,8 @@
 # include "Libft/libft.h"
 # include "minilibx-linux/mlx.h"
 
-# define WIN_WIDTH 1920
-# define WIN_HEIGHT 1080
+# define WIN_WIDTH 1080
+# define WIN_HEIGHT 720
 
 # define NUM_KEYS 7
 # define KEY_LEFT_IDX	0

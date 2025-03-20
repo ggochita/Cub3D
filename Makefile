@@ -29,6 +29,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ) $(LIBFT) $(MLX_LIB)
 	@echo $(LINKING)
+	@chmod 777 $(MLX_DIR)/Makefile
 	@$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(MLX) -o $(NAME)
 
 %.o: %.c
