@@ -29,8 +29,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ) $(LIBFT) $(MLX_LIB)
 	@echo $(LINKING)
-	@chmod 777 $(MLX_DIR)/Makefile
-	@chmod 777 $(MLX_DIR)/configure
 	@$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(MLX) -o $(NAME)
 
 %.o: %.c
@@ -41,6 +39,7 @@ $(LIBFT):
 	@make -C $(LIBFT_DIR) --no-print-directory
 
 $(MLX_LIB):
+	@chmod +rx $(MLX_DIR)/configure
 	@make -C $(MLX_DIR) --no-print-directory
 
 clean:
